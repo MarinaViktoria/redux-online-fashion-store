@@ -12,7 +12,7 @@ const Clothes = ({clothes}) => {
 
     return(
         <div className="clothes-info" key={clothes.id}>
-            <img src={`${clothes.img}.jpg`} alt="clothes" height="500px" width="350px"/>
+            <img className="collection" src={`${clothes.img}.jpg`} alt="clothes"/>
             <h4>{clothes.name}</h4>
             <p>${clothes.price}.00</p>
             <ChangeSize size={size} setSize={setSize}/>
