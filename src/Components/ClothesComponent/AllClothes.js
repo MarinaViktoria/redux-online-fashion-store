@@ -12,13 +12,13 @@ const AllClothes = () => {
                 <h2>💖 Spring/Summer 2024 💖</h2>
             </div>
         
-        <div>
+        <div key={selectedCategory}>
             {dataClothes
             .filter(clothes => {
                 if (selectedCategory === "ALL") return true;
                 return selectedCategory === clothes.category;
             })
-            .map(clothes => <Clothes clothes={clothes}/>)}
+            .map(clothes => <Clothes clothes={clothes} key={clothes.id}/>)}
         </div>
         </div>
     )
