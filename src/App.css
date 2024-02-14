@@ -1,38 +1,85 @@
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFCACC;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.blockOne {
+  margin-left: 20px;
+  width: 62%;
+  background-color: #FF9B9B;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.blockTwo {
+  margin-right: 20px;
+  width: 30%;
+  background-color: #FF9B9B;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header, .clothes-info, .categories, .cart-result, .cart-items {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+h1 {
+  margin-top: 30px;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2 {
+  font-family: "Poppins", sans-serif;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+h4 {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 5px;
+}
+p {
+  font-family: "Poppins", sans-serif;
+  margin: 10px;
+}
+.categories {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.cartIcon {
+  width: 45px;
+}
+.categorySelected {
+  background-color: #FFCACC;
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px;
+}
+.categoryNotSelected {
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px;
+}
+.categorySelected:hover, .categoryNotSelected:hover {
+  background-color: #FDFFAE;
+}
+button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  background-color: #FFCACC;
+  border: 1px solid black;
+  margin: 5px;
+}
+.add-btn {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  padding: 5px;
+  background-color: #FFCACC;
+  border: 1px solid black;
+  margin-bottom: 30px;
+  margin-top: 15px;
+}
+button:hover, .add-btn:hover {
+  background-color: #FDFFAE;
+}
+.icon {
+  width: 20px;
 }
